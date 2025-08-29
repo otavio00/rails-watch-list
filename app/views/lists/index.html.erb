@@ -1,7 +1,8 @@
 <h1>Save any kind of movies</h1>
 
+<ul>
 <%@lists.each do |list|%>
-  <%=link_to list.name, list_path(path)%>
+  <li><%=link_to list.name, list_path(list)%></li>
 <%end%>
-
-<%=link_to "New list", new_list_path%>
+</ul>
+<%=link_to "New list", new_list_path %>
